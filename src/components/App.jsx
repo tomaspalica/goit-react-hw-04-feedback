@@ -1,6 +1,6 @@
 
 import { Statistics } from "./Statistics";
-import React, { Component, useState } from "react";
+import React, {  useState } from "react";
 import { FeedbackOptions } from "./Feedbackoptions";
 import {Section} from "./Section"
 import { Notification } from "./Notification";
@@ -22,6 +22,9 @@ const handleClick = event => {
     case("bad"):
     setBad(bad + 1);
     break;
+
+    default:
+      return false;
   }
    
   };
